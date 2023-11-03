@@ -18,6 +18,7 @@
        <a href="index.html"><div class="logo"></div></a>
         <div class="ul-nav">
            <ul class="primary-nav">
+              <li><a href="#home">Home</a></li>
                <li><a href="#allproducts">Products</a></li>
                <li><a href="#about">About us</a></li>
                <li><a href="#contacts">Contact</a></li>
@@ -32,7 +33,7 @@
     
     <main>
 
-    <section class="hero-section">
+    <section class="hero-section" id="home">
         <div class="wrapper">
             <div class="right-section">
                 <div class="upper-section"></div>
@@ -61,7 +62,15 @@
                         </div>
                        <a href="#" class="carticon"><img src="images/cart.svg" alt="cart icon"></a>  
                     </div>
+                    <div class="hero card1">
+                        <div>
+                        <p>statement</p>
+                         <a href="#" class="product title1">ordered</a>
+                        </div>
+                       <a href="#" class="carticon1"><img src="images/arrow.svg" alt="arrow icon"></a>  
+                    </div>
                </div>
+               
 
                     </div>
                 </div>
@@ -157,6 +166,33 @@
    <a href="#" class="carticon1"><img src="images/arrow.svg" alt="arrow icon"></a>  
 </div>
 
+<!-- product modal  -->
+
+<div class="pro_modal hidden" >
+
+    <div class="left-content1" style="background-image: url('/images/milk.jpg');"></div>
+
+    <div class="right-content">
+        <h1>Organic Milk <span>coffee-milk</span></h1>
+        <p>Indulge in the pure essence of organic milk coffee.
+             Sourced from the finest organic beans and combined
+              with wholesome, sustainably-produced milk, our coffee 
+              offers a guilt-free, rich, and smooth flavor that delights
+               your taste buds 
+            and respects the planet. Experience the harmony
+             of quality and conscience with every sip of our organic milk coffee
+        </p>
+      <div class="order">
+        <div class="card3">
+            <a href="#" class="title">Add to Cart</a>
+        </div>
+        <div class="card3">
+            <a href="#" class="title">Order Now</a>
+        </div>
+    </div>
+    </div>
+    
+</div>
 
 
 </section>
@@ -182,6 +218,7 @@
     </div>
 </div>
 
+
 </section>
 
 <section >
@@ -197,6 +234,8 @@
 </section>
 
     </main>
-   
+   <div class="overlay hidden"></div>
+
+   <script src="/js/index.js"></script>
 </body>
 </html>

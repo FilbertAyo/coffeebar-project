@@ -7,8 +7,9 @@ header{
     margin: 0;
 }
 body{
-    max-width: 1000px;
+    max-width: 1400px;
     margin: 0 auto;
+    background-color: wheat;
 }
 .logo{
     height: 5.5em;
@@ -23,7 +24,7 @@ body{
 
 
 .navbar{
-    width: 1000px;
+    width: 1400px;
     height: 75px;
     display: flex; 
     margin-top: .2em;
@@ -37,11 +38,11 @@ nav ul{
 .ul-nav{
     width: 100%;
     display: flex;
-    gap: 416px;
+    gap: 53%;
 }
 .primary-nav{
     align-items: center;
-    gap: 1em;
+    gap: 30px;
     font-size: 1.8em;
 }
 .secondary-nav{
@@ -51,13 +52,16 @@ nav ul{
     align-items: center
 }
 
-
-.navbar ul li a{
-    text-decoration: none;
-    font-weight: 500;
-}
-.primary-nav  a{
+.primary-nav li a{
         color: black ;
+        text-decoration: none;
+        font-weight: 500;
+}
+.primary-nav li a:hover, .primary-nav li a:active {
+    color: white;
+}
+.primary-nav li a:focus{
+color: white;
 }
 .secondary-nav  a{
         color: white;
@@ -80,24 +84,24 @@ main{
     font-size: 1.4em;
 }
  h1{
-    font-size: 5.5em;
+    font-size: 6em;
     font-weight: 700;
     color: black;
     margin: 0;
 }
 .text-wrap{
-    margin-top: 1em;
+    margin-top: 50px;
 }
 .text-wrap p{
-    font-size: 1.8em;
+    font-size: 2em;
     font-weight: 500;
     margin: 0;
 }
 
 .right-section{
     margin: 0;
-    width: 32em;
-    height: 38em;
+    width: 690px;
+    height: 800px;
 }
 .left-section {
     flex-grow: 1;
@@ -112,22 +116,22 @@ main{
 }
 .upper-section{
 background-image: url('../images/coffee1.jpg');
-background-size: 100%;
-width: 32em;
-height: 16em;
+background-size: 120%;
+width: 680px;
+height: 400px;
 border-radius: 1.2em;
 }
 
 .product-btns{
-    margin-top: 3.6em;
+    margin-top: 46px;
     display: flex;
-    gap: 1.5em;    
+    gap: 30px;    
 }
 .hero{
     background: gray;
     border-radius: .6em;
-    width: 12em;
-    padding: .7em;
+    width: 200px;
+    padding: 15px;
     height: auto;
     display: flex;
     align-items: center ;
@@ -137,7 +141,7 @@ border-radius: 1.2em;
     margin: 0;
 }
 .card1 p, .card2 p{
-    font-size: .8em;
+    font-size: 15px;
     text-transform: uppercase;
     color: grey;
 }
@@ -145,8 +149,8 @@ border-radius: 1.2em;
     text-decoration: none;
     margin: 0;
     color: black;
-    font-weight:bold;
-    font-size: 1.5rem;
+    font-weight:500;
+    font-size: 20px;
 }
 .title1 {
     color: white;
@@ -157,7 +161,7 @@ border-radius: 1.2em;
 
 
 .card2{
-    background: rgb(224, 224, 224);
+    background: white;
 }
 .carticon{
     margin: 0;
@@ -182,7 +186,7 @@ border-radius: 1.2em;
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 20px;
+    padding: 50px 20px;
 }
 .right-content{
     width: 48em;
@@ -217,12 +221,16 @@ border-radius: 1.2em;
     color: black;
     display: inline-block;
     font-size: 1.8em;
-    background: #f0f0f0;
+    background: wheat;
     margin-top: 2.2em;
     padding: .7em;
     width: 8em;
     border-radius: 15em;
     text-align: center;
+}
+.card3 a:hover{
+    background-color: white;
+    scale: 1.01;
 }
 
 .allproducts{
@@ -243,7 +251,8 @@ h2{
 }
 .products{
     display: flex;
-    gap: 4em;
+    width: 1400px;
+    gap: 40px;
     justify-content: space-evenly;    
 }
 
@@ -264,11 +273,13 @@ h2{
     background-position: center;
     background-size: 100%;
     top: 45%;
-    width: 250px;
+}
+.product:hover{
+    background-size: 140.5%;
 }
 
 .btn{
-    background: white;
+    background: wheat;
     border-radius: .6em;
     padding: .6em;
     display: flex;
@@ -276,12 +287,17 @@ h2{
     align-items: center;
     justify-content: space-between;
 }
+.btn:hover{
+    background-color: white;
+    scale: 1.01;
+}
 .btn a{
     color:black;
     text-decoration: none;
     font-size: 1.5rem;
-    font-weight: bold;
+    font-weight: 500;
     margin: 0;
+    cursor: pointer;
 }
 .btn p{
  font-size: 1.4rem;
@@ -323,13 +339,13 @@ p.pr-price{
 
 .allpro{
     background: gray;
-    border-radius: .6em;
+    border-radius: 15px;
     padding: .7em;
     height: auto;
     display: flex;
     align-items: center ;
     justify-content: center;
-    width: 180px;
+    width: 250px;
     padding: 20px;
    background-color: black;
    gap: 10px;
@@ -338,4 +354,55 @@ p.pr-price{
 .allpro:hover{
     background-color: gray;
     scale: 1.03;
+}
+
+
+
+.pro_modal{
+    position: absolute;
+    background: #000000;
+    width: 1000px;
+    height: auto;
+    display: flex;
+    gap: 1em;
+    font-size: 1em;
+    border-radius: 1.5em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 20px;
+    z-index: 1001;
+}
+.overlay{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(95, 87, 87, 0.65); /* Semi-transparent black overlay */
+    opacity: 100; /* Initially hidden */
+    z-index: 1000; /* Adjust this value as needed to control layering */
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+.left-content1{
+    width: 45em;
+    height: 45em;
+    margin: 30px;
+    background-size: 100%;
+    background-position: center;
+    border-radius: 1.2em;
+}
+h1 span{
+    font-size: 20px;
+display: flex;
+color: gray;
+}
+
+.order{
+    display: flex;
+    justify-content: space-between;
+}
+
+.hidden{
+    display: none;
 }
