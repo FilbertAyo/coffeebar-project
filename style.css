@@ -79,7 +79,7 @@ main{
     margin-top: 1em;
     font-size: 1.4em;
 }
-.lower-section h1{
+ h1{
     font-size: 5.5em;
     font-weight: 700;
     color: black;
@@ -174,14 +174,15 @@ border-radius: 1.2em;
 .content{
     background: #000000;
     width: 100%;
-    height: 650px;
+    height: auto;
     display: flex;
     gap: 1em;
     font-size: 1em;
-    border-radius: 1.2em;
+    border-radius: 1.5em;
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 20px;
 }
 .right-content{
     width: 48em;
@@ -200,6 +201,7 @@ border-radius: 1.2em;
     font-size: 1.8em;
     margin-top: 1em;
     margin-left: .3em;
+    padding: 10px;
 }
 .left-content{
     width: 45em;
@@ -222,26 +224,16 @@ border-radius: 1.2em;
     border-radius: 15em;
     text-align: center;
 }
-/*.combo{
-    margin: 0;
-    margin-top: 2em;
-    min-height: 50em;
-    background-image: url('../images/combo2.gif');
-    margin-bottom: 2em;
-    background-position: center;
-    background-size: 100%;
-}*/
+
 .allproducts{
     display: flex;
     flex-direction: column;
     gap: 4em;
+    justify-content: center;
+    align-items: center;
 }
-.allproducts1{
-    max-width: 1000px;
-    min-height: 600px;
-    margin-bottom: 0em;
-}
-.allproducts h1{
+
+h2{
     text-align: center;
     font-size: 5em;
     margin: 0;
@@ -254,6 +246,7 @@ border-radius: 1.2em;
     gap: 4em;
     justify-content: space-evenly;    
 }
+
 .prod{
     width: 26em;
     height: 32em;
@@ -265,43 +258,15 @@ border-radius: 1.2em;
     transition: background-size 1000ms;
 
 }
-/*.prod:hover{
-    background-size: 102%;
-}*/
-.product1{
-    background-image: url('../images/milk.jpg');
+
+.product{
+    
     background-position: center;
     background-size: 100%;
     top: 45%;
-}
-.product2{
-    background-image: url('../images/coca.jpg');
-    background-position: center;
-    background-size: 90%;
-}
-.product3{
-    background-image: url('../images/cafe1.jpg');
-    background-position: center;
-    background-size: 100%;
-
+    width: 250px;
 }
 
-.product4{
-    background-image: url('../images/coca1.jpg');
-    background-position: center;
-    background-size: 145%;
-}
-.product5{
-    background-image: url('../images/combo3.jpg');
-    background-position: bottom;
-    background-size: 100%;
-}
-.product6{
-    background-image: url('../images/cafer.jpg');
-    background-position: center;
-    background-size: 100%;
-
-}
 .btn{
     background: white;
     border-radius: .6em;
@@ -333,11 +298,12 @@ p.pr-price{
 }
 .combo-street{
     background: black;
-    width: 1000px;
+    width: 100%;
     height: 600px;
     padding: 2em;
     padding-top: 20em;
     margin: 0;
+    border-radius: 1.5em;
 }
 .cs-left{
     width: 42em;
@@ -350,4 +316,26 @@ p.pr-price{
     background-position: center;
     border-radius: 1.8em;
 
+}
+
+
+/* continue */
+
+.allpro{
+    background: gray;
+    border-radius: .6em;
+    padding: .7em;
+    height: auto;
+    display: flex;
+    align-items: center ;
+    justify-content: center;
+    width: 180px;
+    padding: 20px;
+   background-color: black;
+   gap: 10px;
+
+}
+.allpro:hover{
+    background-color: gray;
+    scale: 1.03;
 }
